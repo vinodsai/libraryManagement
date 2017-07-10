@@ -1,0 +1,20 @@
+<template name="books">
+  <div class="container">
+    <div class="row">
+        {{#each book}}
+          <div class="col-lg-4">
+            <div class="panel panel-info">
+              <div class="panel-heading">
+                <h5><strong>Title: </strong> {{Title}}</h5>
+                <h5><strong>Author: </strong>{{Author}}</h5>
+                <h5><strong>Volume: </strong>{{Volume}}</h5>
+                <h5><strong>Pages: </strong>{{Pages}}</h5>
+                <h5><strong>Type: </strong>{{Type}}</h5>
+                <h5><strong>Row: </strong>{{Row}}</h5>
+              </div>
+            </div>
+          </div>
+        {{/each}}
+    </div>
+  </div>
+</template>

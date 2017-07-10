@@ -1,0 +1,62 @@
+<template name='addBook'>
+  <nav class='navbar navbar-default'>
+    <div class="container-fluid">
+      <div class="navbar-header">
+        <div class="navbar-brand">
+          <a href={{pathFor 'home'}}><span class='main-title'>Lucus</span> Library</a>
+        </div>
+      </div>
+    </div>
+  </nav>
+  <div class="container">
+    <div class="row">
+      <div class="col-lg-4">
+        <h5><span class='main-title'>Add a book</span></h5>
+        <form class='addForm'>
+          <div class="form-group">
+            <input type="text" class='searchField' id='bookTitle' placeholder="Enter the title" style="font-size:20px">
+          </div><br>
+          <div class="form-group">
+            <input type="text" class='searchField' id='bookAuthor' placeholder="Enter author" style="font-size:20px">
+          </div><br>
+          <div class="form-group">
+            <input type="text" class='searchField' id='bookVolume' placeholder="Enter the volume" style="font-size:20px">
+          </div><br>
+          <div class="form-group">
+            <input type="text" class='searchField' id='bookPages' placeholder="Enter the No-of Pages" style="font-size:20px">
+          </div><br>
+          <div class="form-group">
+            <input type="text" class='searchField' id='bookGenre' placeholder="Enter the genre" style="font-size:20px">
+          </div><br>
+          <div class="form-group">
+            <label for="form-control">Select the type</label>
+            <select class="form-control" id='typeSelector'>
+              <option>Hard back</option>
+              <option>Paper back</option>
+            </select>
+          </div>
+          <div class="form-group">
+            <label for="form-control">Select the row</label>
+            <select class="form-control" id='rowSelector'>
+              <option id='aRow'>A</option>
+              <option id='bRow'>B</option>
+              <option id='cRow'>C</option>
+              <option id='dRow'>D</option>
+            </select>
+          </div>
+          <button type="button" class="btn btn-sm btn-default" id='addBook'>Add</button>
+        </form>
+      </div>
+      <div class="col-lg-3 col-lg-offset-5">
+        <h5><span class='main-title'>Inventory</span></h5><br>
+        <h5>Total Books: <strong>{{totalCount}}</strong></h5>
+        <h5>Books in row A: <strong>{{aCount}}</strong></h5>
+        <h5>Books in row B: <strong>{{bCount}}</strong></h5>
+        <h5>Books in row C: <strong>{{cCount}}</strong></h5>
+        <h5>Books in row D: <strong>{{dCount}}</strong></h5>
+        <h5>Books avaliable in Paperback: <strong>{{paperbackCount}}</strong></h5>
+        <h5>Books avaliable in Hardback: <strong>{{hardbackCount}}</strong></h5>
+      </div>
+    </div>
+  </div>
+</template>

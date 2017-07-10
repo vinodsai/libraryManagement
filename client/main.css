@@ -1,0 +1,63 @@
+/* CSS declarations go here */
+.main-title {
+  background-color: black;
+  color: white;
+  padding: 5px;
+}
+.title{
+  text-align: center;
+}
+.navbar-brand a {
+  text-decoration: none;
+  color: black;
+}
+.search{
+  position: relative;
+  margin-top: 30px;
+  margin-left: 430px;
+}
+.searchField {
+  outline: 0;
+  border-width: 0 0 2px 0;
+  border-color: black;
+  width: 350px;
+}
+.searchField:focus{
+  border-color: black;
+}
+.addForm{
+  position: relative;
+  margin-top: 50px;
+
+}
+#addBook{
+  background-color: black;
+  color: white;
+  border-color: black
+}
+#addBook:hover{
+  border-color: black;
+  color: black;
+  background-color: white
+}
+.form-control{
+  width: 300px;
+}
+.form-control:focus{
+  border-color: black
+}
+.label{
+  color: black;
+  font-size: 15px;
+}
+.panel-info > .panel-heading {
+    color: white;
+    background-color: black;
+    border-color: black;
+}
+/*.disable{
+  color: red;
+}
+.disable:hover{
+  cursor: not-allowed;
+}*/

@@ -1,0 +1,30 @@
+<template name='home'>
+  <nav class='navbar navbar-default'>
+    <div class="container-fluid">
+      <div class="navbar-header">
+        <div class="navbar-brand">
+          <a href=""><span class='main-title'>Lucus</span> Library</a>
+        </div>
+      </div>
+      <ul class="nav navbar-nav navbar-right">
+        <li><a href={{pathFor 'addBook'}}>Add a <span class='main-title'>book</span></a></li>
+      </ul>
+    </div>
+  </nav>
+  <div class="container">
+    <div class="jumbotron">
+      <h1 class='title'><span class='main-title'>Lucus</span></h1>
+      <p class='title'>Library</p>
+    </div>
+    <div class="search">
+      <!-- <input type="text" class='searchField' id='bookSearch' placeholder="Search for Title or Author" style="font-size:30px"> -->
+      {{> inputAutocomplete settings=settings id="bookSearch" class="searchField" placeholder="Search for Author" style="font-size:30px"}}
+    </div>
+  </div><br>
+  <div>
+    {{> books}}
+  </div>
+</template>
+<template name='title'>
+  <span class="label">{{Author}}</span>
+</template>
